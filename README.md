@@ -1,21 +1,21 @@
 # Checkered Checkouts Simulation
 
-A C++ checkout-line simulation that implements a queue using a manually managed singly linked list.
+A C++ checkout line simulation that implements a queue using a manually managed singly linked list.
 
 ## Features
 
-- Custom linked-list queue implementation
+- Custom queue built with a linked list
 - Enqueue customers at the back and dequeue from the front
 - Randomized customer arrivals and checkout events
 - Configurable simulation length from 1 to 2,000 cycles
 - Tracks customers waiting and customers served
 - Calculates total items and item value in the queue
-- Handles empty-queue operations safely
+- Handles operations on an empty queue safely
 - Frees dynamically allocated memory
 
 ## How It Works
 
-Each simulation cycle randomly selects an event. A customer has a two-out-of-three chance of entering the checkout line and a one-out-of-three chance of a checkout event occurring.
+Each simulation cycle randomly selects an event. A customer has a two in three chance of entering the checkout line and a one in three chance of a checkout event occurring.
 
 New customers receive an automatically generated ID, a randomized number of items, and a randomized total item value.
 
@@ -45,4 +45,4 @@ Linked lists, queue/FIFO behavior, dynamic memory allocation, pointers, classes 
 
 ## Improvements from the Original Coursework Version
 
-The project uses a dedicated `CheckoutQueue` class to encapsulate queue operations, modern C++ random-number utilities instead of `rand()`, safer input handling, and automatic cleanup of dynamically allocated nodes.
+The project uses a dedicated `CheckoutQueue` class to encapsulate queue operations, modern C++ utilities for random numbers instead of `rand()`, safer input handling, and automatic cleanup of dynamically allocated nodes.
